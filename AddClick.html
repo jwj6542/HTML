@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        document.addEventListener("DOMContentLoaded",()=>{
+            const header = document.createElement('hi')
+            document.body.appendChild(header)
+
+            let count = 0   
+            header.style.userSelect="none" //클릭횟수 클릭시 색이켜지는걸 끄는 코드
+            header.innerText =`클릭횟수 : ${count}`  //클릭횟수를 띄우는 글
+            header.addEventListener("click",()=>{
+                count++
+                header.innerText=`클릭횟수: ${count}`// 클릭횟수를 클릭시 숫자가 올라가는 코드
+            }) 
+        })
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+ 
