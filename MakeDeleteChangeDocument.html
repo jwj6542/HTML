@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        document.querySelector("DOMContentLoaded",()=>{
+            const header =document.creatElement("h1")
+            header.textContent="createElement로 만든 태그"
+            header.style.color = "red"  // 헤더태그를 만들고 내부에 글자를 넣고 스타일을 변경함
+            document.querySelector("body")
+            body.appendChild(header)  //바디에다 붙이는 코드
+            setTimeout(()=>{
+                //body.removeChild(header)  //헤더가 바디로부터 제거하는 코드
+                header.parenNode.removeChild(header) //평소 이코드를 더 많이 씀 
+            },2000)  //2초후에 제거되는 코드
+
+        })
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

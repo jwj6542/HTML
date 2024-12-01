@@ -1,0 +1,30 @@
+<!--타이머-->
+
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        document.addEventListener("DOMContentLoaded",()=>{
+            let [seconds,timerId] = [0,0]  //다중 할당연산
+        const checkbox =document.querySelector(`input[type = checkbox]`)
+        const checkboxResult=document.querySelector("h1#checkbox")
+        checkbox.addEventListener("change",()=>{
+            if(checkbox.change){
+               timerID =setInterval(()=>{
+                    seconds +=1
+                    checkboxResult.textContent = `${seconds}초`
+                },1000)
+            }else{
+                clearInterval(timerId)
+            }
+        })
+    })
+    </script>
+</head>
+<body>
+    <input type="checkbox" name="" id="">타이머활성화<br>
+    <h1 id="checkbox"> </h1>
+</body>
+</html>
