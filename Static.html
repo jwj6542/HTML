@@ -1,0 +1,20 @@
+<script>
+    //new Square가 몇번 실행됬는지 알고싶어요!
+    Square.count = 0  //앞에 이름을 붙여주는게 클래스가 많아지면 알아보기쉽다
+    class Square{
+        static count = 0    //static을 사용하면 앞에.을 찍고 사용할 수 있는 문법이 생성
+        static test(){} // static은 언제쓰나요? 디자인패턴을 쓸때 많이 사용합니다!
+       
+        constructor (length){
+            Square.count +=1
+        }
+    }
+
+    console.log(Square.count)
+    new Square()
+    new Square()
+    new Square()
+    new Square()
+    console.log(Square.count)
+</script>
+
