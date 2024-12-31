@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RadioCheckBox</title>
+</head>
+<body>
+  <form action="">
+    <!--checkbox-->
+    <fieldset>
+      <legend>좋아하는 색상을 모두 선택해주세요</legend> 
+      <ul>
+        <li>
+          <label for="red">빨강</label>
+          <input type="checkbox" id='red' value='red'>
+        </li>
+        <li>
+          <label for="orange">주황</label>
+          <input type="checkbox" id='orange' value='orange'>
+        </li>
+        <li>
+          <label for="yellow">노랑</label>
+          <input type="checkbox" id='yellow' value='yellow'>
+        </li>
+        <li>
+          <label for="blue">파랑</label>
+          <input type="checkbox" id='blue' value='blue'>
+        </li>
+      </ul>
+    </fieldset>
+    <!--radio -->
+    <fieldset>
+      <legend>배송방법은?</legend>
+      <ul>
+        <li>
+          <label for="free">무료</label>
+          <input type="radio" name='deliverly' id='free' value='free'>
+        </li>
+        <li>
+          <label for="fee">유료</label>
+          <input type="radio" name='deliverly' id='fee' value='fee'>
+        </li>
+      </ul>
+    </fieldset>
+    <!--Textarea-->
+    <!-- row 화면에 표시되는 행수를 지정-->
+    <!-- cols 화면에 표시되는 컬럼수를 지정-->
+     <legend>자기소개서</legend>
+     <textarea name="" id="" cols='15' rows='5'>저는 조우진입니다</textarea>
+     <!--select-->
+     <fieldset>
+      <legend>주문상품을 선택해주세요</legend>
+      <ul>
+        <li>
+        <select name="goods" id="goods"></select>
+        <option value="apple_10kg">사과 10kg</option>
+        <option value="20kg">20</option>
+        <option value="30kg">30</option>
+        <option value="40kg">40</option>
+        </li>
+        <li>
+            <label for="initial-cream-choice">맛을 선택하세요<label>
+            <input list='initial-cream-flavors' id='initial-cream-choice'
+            name='initial-cream-flavors'>
+            <datalist id='initial-cream-flavors'>
+              <option value="Chocolate"></option>
+              <option value="Coconut"></option>
+              <option value="Mint"></option>
+              <option value="Strawberry"></option>
+              <option value="Vanilla"></option>
+            </datalist>
+          </li>
+      </ul>
+      <button type='submit'>제출하기</button> <!--button type submit은 폴더안의 주소에 제출하는것 -->
+      <button type='reset'>리셋하기</button> <!--창을 다 지움-->
+      <button type='button' onclick='alert("hellow world")'>버튼</button>
+     </fieldset>
+  </form>
+</body>
+</html>
