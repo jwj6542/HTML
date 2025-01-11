@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <style>
+      movies {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      #movies td,
+      #movies th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+      movies th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: green;
+        color: white;
+      }
+      #movies tr:nth-child(odd) {
+        background-color: gray;
+      }
+
+      #movies tr:hover {
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <table id="movies">
+      <tr>
+        <th>영화</th>
+        <th>상영시간</th>
+        <th>개봉</th>
+      </tr>
+      <tr>
+        <td>블랙핑크 더 무비</td>
+        <td>124분</td>
+        <td>2025.12.12</td>
+      </tr>
+      <tr>
+        <td>보스베이비2</td>
+        <td>126분</td>
+        <td>2025.12.14</td>
+      </tr>
+      <tr>
+        <td>스폰지밥</td>
+        <td>122분</td>
+        <td>2025.12.10</td>
+      </tr>
+    </table>
+  </body>
+</html>

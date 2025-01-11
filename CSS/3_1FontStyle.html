@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font Style</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      html {
+        font-family: serif, monospace;
+        font-family: "Nanum Gothic", sans-serif;
+        font-size: 16px;
+      }
+      .title {
+        font-size: 20px;
+      }
+      .content {
+        font-size: 10px;
+      }
+      .font-italic {
+        font-style: italic;
+      }
+      .font-weight-bold {
+        font-weight: bold;
+      }
+      .font-weight-300 {
+        font-weight: 300;
+      }
+      .font-varitant {
+        font-variant: small-caps;
+      }
+      .subtitle {
+        font-size: 20px;
+      }
+      .subtitle-rem {
+        font-size: 2rem;
+        /* rem은 html기준으로 2rem은 html사이즈의 2배크기로 지정 */
+      }
+      .subtitle-em {
+        font-size: 2em;
+        /* em은 자신의 태그의 몇배로 할 것인가? */
+      }
+      .rectangle.width {
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+      }
+      .rectangle.height {
+        height: 20px;
+        width: 100px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="title">조우진 css공부</h2>
+    <p class="content">css를 공부할 조우진입니다</p>
+    <p class="content font-italic">css를 공부할 조우진입니다</p>
+    <p class="content font-weight-bold">css를 공부할 조우진입니다</p>
+    <p class="content font-weight-300">css를 공부할 조우진입니다</p>
+    <p class="content font-variant">Study , for css</p>
+    <hr />
+    <h2>px</h2>
+    <p class="subtitle">css를 공부할 조우진입니다</p>
+    <h2>rem</h2>
+    <p class="subtitle-rem">css를 공부할 조우진입니다</p>
+    <h2>em</h2>
+    <p class="subtitle-em">css를 공부할 조우진입니다</p>
+    <hr />
+    <!-- viewport width -->
+    <!-- vw, vh는 폰트의 가로세로 길이를 전체 크기 px에서 비율로 조정한것 -->
+    <h2>vw</h2>
+    <div class="rectangle width"></div>
+    <!-- viewport Height -->
+    <h2>vh</h2>
+    <div class="rectangle height"></div>
+  </body>
+</html>

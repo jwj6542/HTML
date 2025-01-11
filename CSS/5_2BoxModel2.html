@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border</title>
+    <style>
+      .border {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        border-top: 10px dotted red;
+        border-bottom: 5px dashed blue;
+        border-left: 1px solid green;
+        border-right: 3px solid cyan;
+      }
+      .border-radius {
+        margin: 20px;
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        border-radius: 20px;
+      }
+      .content-box {
+        width: 100px;
+        height: 100px;
+        border: 10px solid black;
+        margin: 10px;
+        box-sizing: content-box;
+        padding: 20px;
+      }
+      .border-box {
+        width: 100px;
+        height: 100px;
+        border: 10px solid red;
+        margin: 10px;
+        box-sizing: border-box;
+        padding: 20px;
+      }
+    </style>
+    <!-- Border: 어떤 형태의 테두리 스타일을 지정. 점선인지, 실전인지 등등 -->
+  </head>
+  <body>
+    <div class="border"></div>
+    <div class="border-radius"></div>
+    <div class="content-box"></div>
+    <div class="border-box"></div>
+  </body>
+</html>

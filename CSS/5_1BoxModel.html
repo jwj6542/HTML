@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+      /* Content, Padding, Margin, Border */
+
+      /* Content: width, height의 값을 지정할수 있다 */
+
+      /* Padding: Html 요소의 안쪽 여백을 지정 */
+
+      /* Margin: Html의 바깥 여백을 지정 */
+      div {
+        background-color: rgb(200, 200, 200);
+        width: 200px;
+        height: 200px;
+        padding: 20;
+        border: 10px solid green;
+        margin: 40px;
+      }
+      span {
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+        display: inline;
+        /* display: inline을 적용해줘야지 span처럼 고유영역을
+       가지고 있는 녀석들 변경가능 */
+      }
+      div.padding {
+        border: 1px solid black;
+        padding: 20px 10px 5px 3px;
+      }
+      div.margin {
+        border: 1px solid red;
+        margin: 20px;
+      }
+      .shape {
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content"></div>
+    <span>hello</span>
+    <div class="padding">
+      나는 내가 빛나는 별인 줄 알았어요 한 번도 의심한 적 없었죠 몰랐어요 난
+      내가 벌레라는 것을 그래도 괜찮아 난 눈부시니까 하늘에서 떨어진 별인 줄
+      알았어요 소원을 들어주는 작은 별 몰랐어요 난 내가 개똥벌레라는 것을 그래도
+      괜찮아 나는 빛날 테니까 나는 내가 빛나는 별인 줄 알았어요 한 번도 의심한
+      적 없었죠 몰랐어요 난 내가 벌레라는 것을 그래도 괜찮아 난 눈부시니까 한참
+      동안 찾았던 내 손톱 하늘로 올라가 초승달 돼 버렸지 주워 담을 수도 없게
+      너무 멀리 갔죠 누가 저기 걸어놨어 누가 저기 걸어놨어
+    </div>
+
+    <div class="margin">
+      나는 내가 빛나는 별인 줄 알았어요 한 번도 의심한 적 없었죠 몰랐어요 난
+      내가 벌레라는 것을 그래도 괜찮아 난 눈부시니까 하늘에서 떨어진 별인 줄
+      알았어요 소원을 들어주는 작은 별 몰랐어요 난 내가 개똥벌레라는 것을 그래도
+      괜찮아 나는 빛날 테니까 나는 내가 빛나는 별인 줄 알았어요 한 번도 의심한
+      적 없었죠 몰랐어요 난 내가 벌레라는 것을 그래도 괜찮아 난 눈부시니까 한참
+      동안 찾았던 내 손톱 하늘로 올라가 초승달 돼 버렸지 주워 담을 수도 없게
+      너무 멀리 갔죠 누가 저기 걸어놨어 누가 저기 걸어놨어
+    </div>
+
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: lightgray;
+      }
+      .outline,
+      .box {
+        width: 60px;
+        height: 60px;
+      }
+      .outline {
+        border: 3px solid yellow;
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+      .box {
+        background-color: blue;
+      }
+      .box1 {
+        transform: translateY(20px, 30px);
+      }
+      .box2 {
+        transform: scaleX(0.5);
+        transform: scaleY(0.5);
+      }
+      .box2 {
+        transform: rotateX(45deg);
+      }
+      /* .outline-box3{ */
+      /* perspective: 60; */
+      /* } */
+      .box3 {
+        transform: rotateZ(45deg);
+      }
+      .box4 {
+        transform: skew(35deg, 15deg);
+      }
+      .box1 {
+        transition-property: width, height;
+        transition-duration: 2s;
+        /* transition-delay: 1s; */
+        transition-timing-function: linear;
+      }
+      .box1:hover {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        transform: rotate(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outline">
+      <div class="box boxl"></div>
+    </div>
+    <div class="outline">
+      <div class="box boxl2"></div>
+    </div>
+    <div class="outline">
+      <div class="box boxl3"></div>
+    </div>
+    <div class="outline">
+      <div class="box boxl4"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query</title>
+    <style>
+      /* max-width, min-width 
+    0~400px blue 401~600px red 601~800px yellow
+    태그가 같아서 아랫것부터 우선순위로 실행이됨*/
+      @media (max-width: 600px) {
+        body {
+          background-color: red;
+        }
+      }
+      @media (max-width: 400px) {
+        body {
+          background-color: blue;
+        }
+      }
+      @media (min-width: 601px) {
+        body {
+          background-color: yellow;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>안녕하세요</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo debitis
+      porro quasi natus dolor eum eveniet in, accusamus officiis maxime itaque
+      eaque, aperiam, quod neque doloribus cupiditate dignissimos eos minima!
+      Eveniet, maxime pariatur dolore ducimus quas tenetur voluptatem tempore
+      sequi beatae amet excepturi omnis animi incidunt, voluptas dolor
+      aspernatur, enim ullam! Non exercitationem necessitatibus ratione omnis
+      aspernatur dolore perspiciatis dolorem! Molestiae, voluptas minus velit
+      tempora ipsum delectus temporibus aperiam sunt consequatur, consequuntur
+      inventore alias, porro quidem incidunt fugit quod nulla in corrupti? Iure,
+      rerum? Ducimus cum omnis natus beatae qui?
+    </p>
+  </body>
+</html>
