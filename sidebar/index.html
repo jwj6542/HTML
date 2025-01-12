@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>사이드바 예제</title>
+  <link rel="stylesheet" href="styles.css"> <!-- 스타일 시트 연결 -->
+</head>
+<body>
+  <!-- 사이드바 -->
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#">홈</a>
+    <a href="#">서비스</a>
+    <a href="#">프로젝트</a>
+    <a href="#">문의하기</a>
+  </div>
+
+  <!-- 사이드바 열기 버튼 -->
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰ 사이드바 열기</span>
+
+  <div id="main">
+    <h1>사이드바 예제 페이지</h1>
+    <p>사이드바를 열고 닫을 수 있습니다.</p>
+  </div>
+
+  <script src="script.js"></script> <!-- JavaScript 파일 연결 -->
+</body>
+</html>
